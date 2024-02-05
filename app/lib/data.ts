@@ -120,7 +120,6 @@ export async function fetchFilteredInvoices(
       LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
     `;
 
-    console.log('test...xxx %o', { invoices });
     console.log('haha', invoices.rowCount);
     return invoices.rows;
   } catch (error) {
